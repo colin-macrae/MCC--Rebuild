@@ -1,0 +1,32 @@
+textarea {
+  border: 1px black solid;
+  width: 30%;
+}
+
+.submit-btn {
+  border: 1px black solid;
+}
+
+.submit-btn:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+input, select {
+  border: 1px black solid;
+}
+
+.hide {
+  display: none;
+}
+
+.required-field {
+  background-color: rgb(255, 140, 140);
+}
+
+.asterisk {
+  color:rgb(255, 92, 92)
+}
+
+.email-sent {
+  background-color: rgb(197, 236, 197);
+}

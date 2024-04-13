@@ -1,0 +1,71 @@
+.get-in-touch-section {
+  border-top: 20px solid rgb(245, 136, 0);
+  background-color: rgb(240, 240, 240);
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-in-touch-content {
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.897);
+  padding: 60px 240px;
+}
+
+h2 {
+  color: rgb(0, 80, 103);
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+  margin-bottom: 40px;
+}
+
+.btn {
+  background-color: rgb(245, 136, 0);
+  color: white;
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* ************************
+-----MOBILE STYLING-------
+************************ */
+@media only screen and (max-width: 1150px) {
+  .get-in-touch-section {
+    height: 600px;
+  }
+  .get-in-touch-content {
+    width: 90%;
+    padding: 60px 10%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .get-in-touch-section {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}
