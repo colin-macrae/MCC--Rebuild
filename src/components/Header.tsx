@@ -14,7 +14,7 @@ export function Header() {
 
   return (
     <>
-      <div className="HEADER flex bg-[#005067] header sticky top-0">
+      <div className="HEADER flex bg-[#005067] sticky top-0 z-10">
         <div className="HEAD-LEFT basis-1/3 CONTENTS flex items-center justify-center">
           <div className="LOGO flex h-36 object-contain">
             <img className="self-start mt-6" src={coloredLogo}></img>
@@ -30,22 +30,44 @@ export function Header() {
           <Link to="/MCC-Rebuild/employment">
             <div className="mb-10 mr-12">EMPLOYMENT</div>
           </Link>
-            <div
-              onMouseEnter={() => setServicesOnHover(true)}
-              onMouseLeave={() => setServicesOnHover(false)}
-              className="SERVICES relative mb-10 mr-12"
-            >
+          <div
+            onMouseEnter={() => setServicesOnHover(true)}
+            onMouseLeave={() => setServicesOnHover(false)}
+            className="SERVICES relative mb-10 mr-12"
+          >
+            <div className="services w-[5.625rem]">
               SERVICES &#9660;
-            {servicesOnHover && (
-              <div className="DROP-DOWN absolute top-6 left-0 h-max bg-[#008cb3] flex flex-col w-40 rounded">
-            <button className="text-sm pt-2 px-2" onClick={() => navigate("/MCC-Rebuild/Commercial-Cleaning")}>Commercial Cleaning</button>
-            <button className="text-sm pt-2 px-2" onClick={() => navigate("/MCC-Rebuild/Janitorial-Services")}>Janitorial Services</button>
-            <button className="text-sm pt-2 px-2" onClick={() => navigate("/MCC-Rebuild/Carpet-Cleaning")}>Commercial Carpet Cleaning</button>
-            <button className="text-sm pt-2 px-2 pb-2" onClick={() => navigate("/MCC-Rebuild/Office-Cleaning")}>Office Cleaning</button>
+              {servicesOnHover && (
+                <div className="DROP-DOWN absolute top-6 left-0 h-max bg-[#008cb3] flex flex-col w-60 rounded">
+                  <button
+                    className="text-m pt-2 px-2 text-left"
+                    onClick={() => navigate("/MCC-Rebuild/Commercial-Cleaning")}
+                  >
+                    Commercial Cleaning
+                  </button>
+                  <button
+                    className="text-m pt-2 px-2 text-left"
+                    onClick={() => navigate("/MCC-Rebuild/Janitorial-Services")}
+                  >
+                    Janitorial Services
+                  </button>
+                  <button
+                    className="text-m pt-2 px-2 text-left"
+                    onClick={() => navigate("/MCC-Rebuild/Carpet-Cleaning")}
+                  >
+                    Commercial Carpet Cleaning
+                  </button>
+                  <button
+                    className="text-m pt-2 px-2 pb-2 text-left"
+                    onClick={() => navigate("/MCC-Rebuild/Office-Cleaning")}
+                  >
+                    Office Cleaning
+                  </button>
+                </div>
+              )}
             </div>
-          )}
           </div>
-         
+
           <Link to="/MCC-Rebuild/contact">
             <div className="mb-10 mr-12">CONTACT</div>
           </Link>
