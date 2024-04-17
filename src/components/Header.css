@@ -44,9 +44,15 @@
   margin-top: 30px;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1600px) {
   .navbar {
-  margin-top: -30px;
+  margin-top: -40px;
+}
+}
+
+@media only screen and (max-width: 1600px) {
+  .navbar {
+  margin-top: -40px;
 }
 }
 
@@ -110,6 +116,10 @@
 
 .DROP-DOWN button {
   margin-bottom: .5rem;
+}
+
+.HEADER {
+  height: 130px;
 }
 
 
