@@ -49,7 +49,7 @@ export function NavLinks() {
   const [servicesOnHover, setServicesOnHover] = useState(false);
   const navigate = useNavigate();
   return (
-    <div className="navbar flex justify-center pb-4">
+    <div className="navbar flex justify-center">
       <div className="HEAD-CENTER desktop-nav-links flex text-white font-bold">
         <Link className="nav-item" to="/MCC-Rebuild/">
           <div>HOME</div>
@@ -107,11 +107,21 @@ export function NavLinks() {
 }
 
 export function SliderMenu({setSliderOpen}) {
-  const [servicesOnHover, setServicesOnHover] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
   const navigate = useNavigate();
 
+  const toggleServices = () => {
+    setServicesOpen(!servicesOpen);
+  };
+
+  const closeSliderAndNavigate = (path) => {
+    setServicesOpen(false); 
+    setSliderOpen(false); 
+    navigate(path); 
+  };
+
   return (
-    <div className="slider-menu">
+    <div className="slider-menu" onClick={toggleServices}>
       <button onClick={() => setSliderOpen(false)}>
         <i className="fa-solid fa-xmark"></i>
       </button>
@@ -138,39 +148,40 @@ export function SliderMenu({setSliderOpen}) {
           >
             <div>EMPLOYMENT</div>
           </Link>
-          <div
-            onMouseEnter={() => setServicesOnHover(true)}
-            onMouseLeave={() => setServicesOnHover(false)}
-            className="SERVICES relative nav-item"
-          >
-            <div
-              onClick={() => setSliderOpen(false)}
-              className="services w-[7rem]"
-            >
+          <div className="SERVICES relative nav-item">
+            <div onClick={toggleServices} className="services w-[7rem]">
               SERVICES &#9660;
-              {servicesOnHover && (
+              {servicesOpen && (
                 <div className="DROP-DOWN absolute top-6 left-0 h-max bg-[#008cb3] flex flex-col w-60 rounded">
                   <button
                     className="text-m pt-2 px-2 text-left"
-                    onClick={() => navigate("/MCC-Rebuild/Commercial-Cleaning")}
+                    onClick={() =>
+                      closeSliderAndNavigate("/MCC-Rebuild/Commercial-Cleaning")
+                    }
                   >
                     Commercial Cleaning
                   </button>
                   <button
                     className="text-m pt-2 px-2 text-left"
-                    onClick={() => navigate("/MCC-Rebuild/Janitorial-Services")}
+                    onClick={() =>
+                      closeSliderAndNavigate("/MCC-Rebuild/Janitorial-Services")
+                    }
                   >
                     Janitorial Services
                   </button>
                   <button
                     className="text-m pt-2 px-2 text-left"
-                    onClick={() => navigate("/MCC-Rebuild/Carpet-Cleaning")}
+                    onClick={() =>
+                      closeSliderAndNavigate("/MCC-Rebuild/Carpet-Cleaning")
+                    }
                   >
                     Commercial Carpet Cleaning
                   </button>
                   <button
                     className="text-m pt-2 px-2 pb-2 text-left"
-                    onClick={() => navigate("/MCC-Rebuild/Office-Cleaning")}
+                    onClick={() =>
+                      closeSliderAndNavigate("/MCC-Rebuild/Office-Cleaning")
+                    }
                   >
                     Office Cleaning
                   </button>
