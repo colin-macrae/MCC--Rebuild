@@ -10,6 +10,12 @@
   padding: 0 15px;
 }
 
+.call-us-btn:hover {
+  cursor: pointer;
+  background-color: rgb(0, 96, 103);
+  transition: background-color .2s ease;
+}
+
 /* ************************
 -----MOBILE STYLING-------
 ************************ */

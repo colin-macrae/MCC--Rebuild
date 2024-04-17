@@ -25,7 +25,7 @@ export function Header() {
               </span>{" "}
               EMAIL US
             </button>
-            <button className="text-white text-center h-12 px-4 self-center bg-[#F58800] rounded font-bold mx-5">
+            <button className="call-us-btn text-white text-center h-12 px-4 self-center bg-[#F58800] rounded font-bold mx-5">
               CALL US NOW
             </button>
             <button className="flex text-white">
