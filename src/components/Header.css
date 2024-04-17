@@ -10,4 +10,42 @@
   padding: 0 15px;
 }
 
+/* ************************
+-----MOBILE STYLING-------
+************************ */
+@media only screen and (max-width: 1400px) {
+  .navbar {
+  margin-top: -30px;
+}
+}
+
+@media only screen and (max-width: 1140px) {
+  .HEAD-RIGHT {
+    display: none !important;
+  }
+}
+
+/* remove the query below after home page is finished & fixed, and then a hamburger menu can be created in its stead */
+@media only screen and (max-width: 800px) {
+  .navbar {
+  justify-content: left !important;
+  margin-left: 18%;
+  margin-top: -50px;
+}
+
+.HEAD-CENTER {
+  display: block !important;
+}
+
+.self-start {
+  height: 66px !important;
+}
+
+/* if a hamburger menu is created, you will need to either change or delete the code below */
+.HEADER {
+  background-color: #005067;
+  position: static !important;
+}
+}
+
 
