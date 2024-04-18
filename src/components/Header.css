@@ -1,5 +1,122 @@
-.header {
-  position: sticky; 
+.header-container {
+  width: 1200px;
+  margin: auto;
+}
+
+.navbar {
+  margin-top: -45px;
+}
+
+.nav-item {
+  padding: 0 15px;
+}
+
+.call-us-btn:hover {
+  cursor: pointer;
+  background-color: rgb(0, 96, 103);
+  transition: background-color 0.2s ease;
+}
+
+.fa-bars {
+  font-size: 50px;
+  padding: 20px;
+  color: white;
+  position: absolute;
   top: 0;
-  z-index: 1000;
+  right: 0;
+  display: none !important;
+}
+
+.fa-xmark {
+  font-size: 50px;
+  padding: 20px;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.LOGO a:hover {
+  cursor: pointer;
+}
+
+/* ************************
+-----MOBILE STYLING-------
+************************ */
+.mobile-nav-links {
+  display: block !important;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .header-container {
+    width: 92%;
+  }
+}
+
+
+
+@media only screen and (max-width: 800px) {
+   .HEAD-RIGHT {
+    display: none !important;
+  }
+
+  .navbar {
+    justify-content: left !important;
+    margin-left: 18%;
+    margin-top: -50px;
+  }
+
+  .desktop-nav-links {
+    display: none !important;
+  }
+
+  .self-start {
+    height: 46px !important;
+  }
+
+  .HEADER {
+    background-color: #005067;    
+    height: 90px !important;
+  }
+
+  /* ************************
+  -----  SLIDER MENU   ------
+  ************************ */
+  .slider-menu {
+    height: 1800px;
+    width: 350px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(0, 96, 103);
+    color: white;
+    padding-top: 40px;
+    font-size: 20px;
+  }
+
+  .fa-bars {
+    display: block !important;
+  }
+
+  .SERVICES {
+    padding: 0px !important;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .mobile-nav-links {
+    display: none !important;
+  }
+  .fa-xmark {
+    display: none;
+  }
+}
+
+.DROP-DOWN button {
+  margin-bottom: 0.5rem;
+}
+
+.HEADER {
+  height: 130px;
 }
