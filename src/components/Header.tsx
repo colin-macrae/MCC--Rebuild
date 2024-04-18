@@ -8,13 +8,20 @@ import { useState } from "react";
 
 export function Header() {
   const [sliderOpen, setSliderOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <>
       <div className="HEADER bg-[#005067] sticky top-0 z-10">
         <div className="header-container flex items-center justify-between">
           <div className="LOGO flex h-36">
-            <img className="self-start mt-6" src={coloredLogo}></img>
+            <a>
+              <img
+                className="self-start mt-6"
+                src={coloredLogo}
+                onClick={() => navigate("/MCC-Rebuild/")}
+              ></img>
+            </a>
           </div>
           <div className="HEAD-RIGHT flex items-center mb-10 text-white font-bold">
             <button className="flex leading-5">
@@ -36,7 +43,9 @@ export function Header() {
         <button onClick={() => setSliderOpen(!sliderOpen)}>
           <i className="fa-solid fa-bars"></i>
         </button>
-        {sliderOpen === true ? <SliderMenu setSliderOpen={setSliderOpen}/> : null}
+        {sliderOpen === true ? (
+          <SliderMenu setSliderOpen={setSliderOpen} />
+        ) : null}
       </div>
       <Outlet />
     </>
@@ -104,7 +113,7 @@ export function NavLinks() {
   );
 }
 
-export function SliderMenu({setSliderOpen}) {
+export function SliderMenu({ setSliderOpen }) {
   const [servicesOpen, setServicesOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -113,9 +122,9 @@ export function SliderMenu({setSliderOpen}) {
   };
 
   const closeSliderAndNavigate = (path) => {
-    setServicesOpen(false); 
-    setSliderOpen(false); 
-    navigate(path); 
+    setServicesOpen(false);
+    setSliderOpen(false);
+    navigate(path);
   };
 
   return (
