@@ -1,5 +1,7 @@
 .header-container {
-  padding: 0px 18%; 
+  /* padding: 0px 18%; */
+  width: 1200px;
+  margin: auto;
 }
 
 .navbar {
@@ -13,7 +15,7 @@
 .call-us-btn:hover {
   cursor: pointer;
   background-color: rgb(0, 96, 103);
-  transition: background-color .2s ease;
+  transition: background-color 0.2s ease;
 }
 
 .fa-bars {
@@ -35,94 +37,83 @@
   right: 0;
 }
 
-
 /* ************************
 -----MOBILE STYLING-------
 ************************ */
-.desktop-mobile-links {
+.mobile-nav-links {
   display: block !important;
   margin-top: 30px;
 }
 
-@media only screen and (max-width: 1600px) {
-  .navbar {
-  margin-top: -40px;
-}
-}
-
-@media only screen and (max-width: 1600px) {
-  .navbar {
-  margin-top: -40px;
-}
-}
-
-@media only screen and (max-width: 1140px) {
-  .HEAD-RIGHT {
-    display: none !important;
+@media only screen and (max-width: 1300px) {
+  .header-container {
+    width: 92%;
   }
 }
 
-/* remove the query below after home page is finished & fixed, and then a hamburger menu can be created in its stead */
+
+
 @media only screen and (max-width: 800px) {
-.navbar {
-  justify-content: left !important;
-  margin-left: 18%;
-  margin-top: -50px;
-}
+   .HEAD-RIGHT {
+    display: none !important;
+  }
 
-.desktop-nav-links {
-  display: none !important;
-}
+  .navbar {
+    justify-content: left !important;
+    margin-left: 18%;
+    margin-top: -50px;
+  }
 
-.self-start {
-  height: 66px !important;
-}
+  .desktop-nav-links {
+    display: none !important;
+  }
 
-/* if a hamburger menu is created, you will need to either change or delete the code below */
-.HEADER {
-  background-color: #005067;
-}
+  .self-start {
+    height: 46px !important;
+  }
 
-/* ************************
------  SLIDER MENU   ------
-************************ */
-.slider-menu {
-  height: 1800px;
-  width: 350px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: rgb(0, 96, 103);
-  color: white;
-  padding-top: 40px;
-  font-size: 20px;
-  
-}
+  .HEADER {
+    background-color: #005067;    
+    height: 90px !important;
+  }
 
-.fa-bars {
-  display: block !important;
-}
+  /* ************************
+  -----  SLIDER MENU   ------
+  ************************ */
+  .slider-menu {
+    height: 1800px;
+    width: 350px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(0, 96, 103);
+    color: white;
+    padding-top: 40px;
+    font-size: 20px;
+  }
 
-.SERVICES {
-  padding: 0px !important;
-}
+  .fa-bars {
+    display: block !important;
+  }
+
+  .SERVICES {
+    padding: 0px !important;
+  }
 }
 
 @media only screen and (min-width: 800px) {
-  .desktop-mobile-links {
+  .mobile-nav-links {
     display: none !important;
+  }
+  .fa-xmark {
+    display: none;
   }
 }
 
 .DROP-DOWN button {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .HEADER {
   height: 130px;
 }
-
-
-
-
-

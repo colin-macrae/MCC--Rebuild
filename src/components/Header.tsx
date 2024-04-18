@@ -5,11 +5,9 @@ import coloredLogo from "../assets/Mass_Commercial_Cleaning_FINAL-1cREV-SCREEN.s
 import { Outlet, Link, useNavigate } from "react-router-dom";
 import "./Header.css";
 import { useState } from "react";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export function Header() {
   const [sliderOpen, setSliderOpen] = useState(false);
-  console.log(sliderOpen);
 
   return (
     <>
@@ -121,12 +119,12 @@ export function SliderMenu({setSliderOpen}) {
   };
 
   return (
-    <div className="slider-menu" onClick={toggleServices}>
+    <div className="slider-menu">
       <button onClick={() => setSliderOpen(false)}>
         <i className="fa-solid fa-xmark"></i>
       </button>
       <div className="navbar flex justify-center pb-4">
-        <div className="HEAD-CENTER desktop-mobile-links flex text-white font-bold">
+        <div className="HEAD-CENTER mobile-nav-links flex text-white font-bold">
           <Link
             onClick={() => setSliderOpen(false)}
             className="nav-item"
