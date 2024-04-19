@@ -40,22 +40,27 @@ export default function ContactForm(): JSX.Element {
   };
 
   return (
-    <div>
+    <div className="lg:flex ">
       <div className={sentClassName}>
         Thank you for contacting us. We will be in touch soon!
       </div>
       <form className={formClassName} onSubmit={handleSubmit(onSubmit)}>
         <label htmlFor="first" />
-        <div>
+        <div className="w-full mb-4">
           {" "}
           <input
+            className="w-full"
             id="first"
             placeholder="First Name*"
             {...register("first", { required: true })}
           />
           {errors.first && <span className="required-field">This field is required</span>}
+        </div>
+
+        <div className="w-full mb-4">
           <label htmlFor="last" />
           <input
+            className="w-full"
             id="last"
             placeholder="Last Name*"
             {...register("last", { required: true })}
@@ -64,9 +69,10 @@ export default function ContactForm(): JSX.Element {
         </div>
 
         <label htmlFor="phone" />
-        <div>
+        <div className="w-full mb-4">
           {" "}
           <input
+            className="w-full"
             id="phone"
             placeholder="Phone"
             {...register("phone", { required: true })}
@@ -74,9 +80,10 @@ export default function ContactForm(): JSX.Element {
         </div>
 
         <label htmlFor="email" />
-        <div>
+        <div className="w-full mb-4">
           {" "}
           <input
+            className="w-full"
             id="email"
             placeholder="Email*"
             type="email"
@@ -86,9 +93,10 @@ export default function ContactForm(): JSX.Element {
         </div>
 
         <label htmlFor="message" />
-        <div>
+        <div className="w-full mb-4">
           {" "}
           <textarea
+            className="w-full"
             id="message"
             placeholder="Message*"
             {...register("message", { required: true })}
@@ -106,6 +114,7 @@ export default function ContactForm(): JSX.Element {
           />
         </div>
       </form>
+      <div>lorem ipsum contact</div>
     </div>
   );
 }
