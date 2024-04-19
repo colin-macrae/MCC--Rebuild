@@ -13,7 +13,10 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <>
-      <Routes>
+      <h1>
+        This works!
+      </h1>
+      {/* <Routes>
         <Route path="/" element={<Header />}>
           <Route index element={<Landing />} />
           <Route path="/about" element={<About />} />
@@ -24,7 +27,7 @@ export default function App() {
           <Route path="/Janitorial-Services" element={<JanitorialServices />} />
           <Route path="/Office-Cleaning" element={<OfficeCleaning />} />
         </Route>
-      </Routes>
+      </Routes> */}
       <Footer />
     </>
   );
