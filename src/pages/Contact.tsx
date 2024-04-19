@@ -16,7 +16,8 @@ export default function Contact(): JSX.Element {
           <button className="btn">CONTACT US &rsaquo;</button>
         </div>
       </section>
-      <section className="form-container">
+      <section className="form-container bg-[url('../assets/Carousel-Bg.jpg')]">
+        <h2 className="text-5xl pb-8 pl-5 font-medium text-[#005067] ">Contact Us</h2>
         <ContactForm />
       </section>
     </div>

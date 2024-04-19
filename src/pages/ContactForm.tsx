@@ -53,18 +53,14 @@ export default function ContactForm(): JSX.Element {
             placeholder="First Name*"
             {...register("first", { required: true })}
           />
-          {errors.first && (
-            <span className="required-field">This field is required</span>
-          )}
+          {errors.first && <span className="required-field">This field is required</span>}
           <label htmlFor="last" />
           <input
             id="last"
             placeholder="Last Name*"
             {...register("last", { required: true })}
           />
-          {errors.last && (
-            <span className="required-field">This field is required</span>
-          )}
+          {errors.last && <span className="required-field">This field is required</span>}
         </div>
 
         <label htmlFor="phone" />
@@ -86,9 +82,7 @@ export default function ContactForm(): JSX.Element {
             type="email"
             {...register("email", { required: true })}
           />
-          {errors.email && (
-            <span className="required-field">This field is required</span>
-          )}
+          {errors.email && <span className="required-field">This field is required</span>}
         </div>
 
         <label htmlFor="message" />
@@ -105,7 +99,11 @@ export default function ContactForm(): JSX.Element {
         </div>
 
         <div>
-          <input type="submit" className="submit-btn" value="SEND MESSAGE" />
+          <input
+            type="submit"
+            className="btn bg-[#F48700] text-white"
+            value="SEND MESSAGE"
+          />
         </div>
       </form>
     </div>
