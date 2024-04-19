@@ -25,7 +25,7 @@ export default function Contact(): JSX.Element {
               <ContactForm />
             </div>
 
-            <div className="text-md font-medium lg:ml-12 ml-6 mt-12 lg:mt-1">
+            <div className="text-md font-medium lg:ml-12 ml-6 mt-12 lg:mt-1 text-[#005067]">
               <p className="pb-1">140 Pine Street,</p>
               <p className="pb-6">Florence, MA 01062</p>
               <p className="pb-1">660 Main Street, </p>
