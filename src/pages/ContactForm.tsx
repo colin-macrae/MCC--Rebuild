@@ -110,7 +110,7 @@ export default function ContactForm(): JSX.Element {
         <div>
           <button
             type="submit"
-            className="btn bg-[#F48700] text-white my-2"
+            className="btn bg-[#F48700] text-white my-2 px-16"
             value="SEND MESSAGE"
           >
             SEND MESSAGE
