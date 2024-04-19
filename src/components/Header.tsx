@@ -113,7 +113,7 @@ export function NavLinks() {
   );
 }
 
-export function SliderMenu({ setSliderOpen }) {
+export function SliderMenu({ setSliderOpen }: any) {
   const [servicesOpen, setServicesOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -121,7 +121,7 @@ export function SliderMenu({ setSliderOpen }) {
     setServicesOpen(!servicesOpen);
   };
 
-  const closeSliderAndNavigate = (path) => {
+  const closeSliderAndNavigate = (path: any) => {
     setServicesOpen(false);
     setSliderOpen(false);
     navigate(path);

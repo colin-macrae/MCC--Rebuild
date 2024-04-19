@@ -1,13 +1,13 @@
-import { Route, Routes } from "react-router-dom";
-import { Header } from "./components/Header";
-import Landing from "./pages/Landing";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Employment from "./pages/Employment";
-import CarpetCleaning from "./pages/Services-Pages/Carpet-Cleaning";
-import CommercialCleaning from "./pages/Services-Pages/Commercial-Cleaning";
-import JanitorialServices from "./pages/Services-Pages/Janitorial-Services";
-import OfficeCleaning from "./pages/Services-Pages/Office-Cleaning";
+// import { Route, Routes } from "react-router-dom";
+// import { Header } from "./components/Header";
+// import Landing from "./pages/Landing";
+// import About from "./pages/About";
+// import Contact from "./pages/Contact";
+// import Employment from "./pages/Employment";
+// import CarpetCleaning from "./pages/Services-Pages/Carpet-Cleaning";
+// import CommercialCleaning from "./pages/Services-Pages/Commercial-Cleaning";
+// import JanitorialServices from "./pages/Services-Pages/Janitorial-Services";
+// import OfficeCleaning from "./pages/Services-Pages/Office-Cleaning";
 import Footer from "./components/Footer";    
     
 export default function App() {
