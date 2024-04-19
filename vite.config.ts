@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/MCC-Rebuild/",
+  base: "/MCC--Rebuild/",
   plugins: [react()],
   publicDir: 'public'
 })
