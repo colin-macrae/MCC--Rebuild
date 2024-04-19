@@ -40,7 +40,7 @@ export default function ContactForm(): JSX.Element {
   };
 
   return (
-    <div className="lg:flex ">
+    <div className="">
       <div className={sentClassName}>
         Thank you for contacting us. We will be in touch soon!
       </div>
@@ -74,9 +74,10 @@ export default function ContactForm(): JSX.Element {
           <input
             className="w-full"
             id="phone"
-            placeholder="Phone"
+            placeholder="Phone*"
             {...register("phone", { required: true })}
           />
+          {errors.phone && <span className="required-field">This field is required</span>}
         </div>
 
         <label htmlFor="email" />
@@ -93,10 +94,10 @@ export default function ContactForm(): JSX.Element {
         </div>
 
         <label htmlFor="message" />
-        <div className="w-full mb-4">
+        <div className="w-full mb-4 ">
           {" "}
           <textarea
-            className="w-full"
+            className="w-full min-h-[100px] border-slate-300 p-2"
             id="message"
             placeholder="Message*"
             {...register("message", { required: true })}
@@ -107,14 +108,15 @@ export default function ContactForm(): JSX.Element {
         </div>
 
         <div>
-          <input
+          <button
             type="submit"
-            className="btn bg-[#F48700] text-white"
+            className="btn bg-[#F48700] text-white my-2"
             value="SEND MESSAGE"
-          />
+          >
+            SEND MESSAGE
+          </button>
         </div>
       </form>
-      <div>lorem ipsum contact</div>
     </div>
   );
 }
