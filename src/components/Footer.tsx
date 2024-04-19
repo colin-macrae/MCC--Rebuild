@@ -38,22 +38,22 @@ export default function Footer() {
 
         <div className="lg:w-1/5 flex-col w-full">
           <div className="mt-4 lg:mt-auto">
-            <Link to="/MCC-Rebuild/">
+            <Link to="/">
               <p className="flex justify-center text-sm font-bold pb-2 hover:text-[#F48700]">
                 HOME
               </p>
             </Link>
-            <Link to="/MCC-Rebuild/about">
+            <Link to="/about">
               <p className="flex justify-center text-sm font-bold pb-2 hover:text-[#F48700]">
                 ABOUT
               </p>
             </Link>
-            <Link to="/MCC-Rebuild/employment">
+            <Link to="/employment">
               <p className="flex justify-center text-sm font-bold pb-2 hover:text-[#F48700]">
                 EMPLOYMENT
               </p>
             </Link>
-            <Link to="/MCC-Rebuild/contact">
+            <Link to="/contact">
               <p className="flex justify-center text-sm font-bold hover:text-[#F48700]">
                 CONTACT
               </p>
