@@ -11,21 +11,22 @@ import OfficeCleaning from "./pages/Services-Pages/Office-Cleaning";
 import Footer from "./components/Footer";    
     
 export default function App() {
-    return (
-        <>
-            <Routes>
-                <Route path="/" element={<Header />}>
-                    <Route index element={<Landing />} />
-                    <Route path="about" element={<About />} />
-                    <Route path="contact" element={<Contact />} />
-                    <Route path="employment" element={<Employment />} />
-                    <Route path="Commercial-Cleaning" element={<CommercialCleaning />} />
-                    <Route path="Carpet-Cleaning" element={<CarpetCleaning />} />
-                    <Route path="Janitorial-Services" element={<JanitorialServices />} />
-                    <Route path="Office-Cleaning" element={<OfficeCleaning />} />
-                </Route>
-            </Routes>
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Header />}>
+          <Route index element={<Landing />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/employment" element={<Employment />} />
+          <Route path="/Commercial-Cleaning" element={<CommercialCleaning />} />
+          <Route path="/Carpet-Cleaning" element={<CarpetCleaning />} />
+          <Route path="/Janitorial-Services" element={<JanitorialServices />} />
+          <Route path="/Office-Cleaning" element={<OfficeCleaning />} />
+        </Route>
+      </Routes>
+      <Footer />
+    </>
+  );
 }
+

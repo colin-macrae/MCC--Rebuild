@@ -19,7 +19,7 @@ export function Header() {
               <img
                 className="self-start mt-6"
                 src={coloredLogo}
-                onClick={() => navigate("/MCC-Rebuild/")}
+                onClick={() => navigate("/")}
               ></img>
             </a>
           </div>
@@ -58,13 +58,13 @@ export function NavLinks() {
   return (
     <div className="navbar flex justify-center">
       <div className="HEAD-CENTER desktop-nav-links flex text-white font-bold">
-        <Link className="nav-item" to="/MCC-Rebuild/">
+        <Link className="nav-item" to="/">
           <div>HOME</div>
         </Link>
-        <Link className="nav-item" to="/MCC-Rebuild/about">
+        <Link className="nav-item" to="/about">
           <div>ABOUT</div>
         </Link>
-        <Link className="nav-item" to="/MCC-Rebuild/employment">
+        <Link className="nav-item" to="/employment">
           <div>EMPLOYMENT</div>
         </Link>
         <div
@@ -78,25 +78,25 @@ export function NavLinks() {
               <div className="DROP-DOWN absolute top-6 left-0 h-max bg-[#008cb3] flex flex-col w-60 rounded">
                 <button
                   className="text-m pt-2 px-2 text-left"
-                  onClick={() => navigate("/MCC-Rebuild/Commercial-Cleaning")}
+                  onClick={() => navigate("/Commercial-Cleaning")}
                 >
                   Commercial Cleaning
                 </button>
                 <button
                   className="text-m pt-2 px-2 text-left"
-                  onClick={() => navigate("/MCC-Rebuild/Janitorial-Services")}
+                  onClick={() => navigate("/Janitorial-Services")}
                 >
                   Janitorial Services
                 </button>
                 <button
                   className="text-m pt-2 px-2 text-left"
-                  onClick={() => navigate("/MCC-Rebuild/Carpet-Cleaning")}
+                  onClick={() => navigate("/Carpet-Cleaning")}
                 >
                   Commercial Carpet Cleaning
                 </button>
                 <button
                   className="text-m pt-2 px-2 pb-2 text-left"
-                  onClick={() => navigate("/MCC-Rebuild/Office-Cleaning")}
+                  onClick={() => navigate("/Office-Cleaning")}
                 >
                   Office Cleaning
                 </button>
@@ -105,7 +105,7 @@ export function NavLinks() {
           </div>
         </div>
 
-        <Link className="nav-item" to="/MCC-Rebuild/contact">
+        <Link className="nav-item" to="/contact">
           <div>CONTACT</div>
         </Link>
       </div>
@@ -137,21 +137,21 @@ export function SliderMenu({ setSliderOpen }) {
           <Link
             onClick={() => setSliderOpen(false)}
             className="nav-item"
-            to="/MCC-Rebuild/"
+            to="/"
           >
             <div>HOME</div>
           </Link>
           <Link
             onClick={() => setSliderOpen(false)}
             className="nav-item"
-            to="/MCC-Rebuild/about"
+            to="/about"
           >
             <div>ABOUT</div>
           </Link>
           <Link
             onClick={() => setSliderOpen(false)}
             className="nav-item"
-            to="/MCC-Rebuild/employment"
+            to="/employment"
           >
             <div>EMPLOYMENT</div>
           </Link>
@@ -163,7 +163,7 @@ export function SliderMenu({ setSliderOpen }) {
                   <button
                     className="text-m pt-2 px-2 text-left"
                     onClick={() =>
-                      closeSliderAndNavigate("/MCC-Rebuild/Commercial-Cleaning")
+                      closeSliderAndNavigate("/Commercial-Cleaning")
                     }
                   >
                     Commercial Cleaning
@@ -171,7 +171,7 @@ export function SliderMenu({ setSliderOpen }) {
                   <button
                     className="text-m pt-2 px-2 text-left"
                     onClick={() =>
-                      closeSliderAndNavigate("/MCC-Rebuild/Janitorial-Services")
+                      closeSliderAndNavigate("/Janitorial-Services")
                     }
                   >
                     Janitorial Services
@@ -179,7 +179,7 @@ export function SliderMenu({ setSliderOpen }) {
                   <button
                     className="text-m pt-2 px-2 text-left"
                     onClick={() =>
-                      closeSliderAndNavigate("/MCC-Rebuild/Carpet-Cleaning")
+                      closeSliderAndNavigate("Carpet-Cleaning")
                     }
                   >
                     Commercial Carpet Cleaning
@@ -187,7 +187,7 @@ export function SliderMenu({ setSliderOpen }) {
                   <button
                     className="text-m pt-2 px-2 pb-2 text-left"
                     onClick={() =>
-                      closeSliderAndNavigate("/MCC-Rebuild/Office-Cleaning")
+                      closeSliderAndNavigate("/Office-Cleaning")
                     }
                   >
                     Office Cleaning
@@ -200,7 +200,7 @@ export function SliderMenu({ setSliderOpen }) {
           <Link
             onClick={() => setSliderOpen(false)}
             className="nav-item"
-            to="/MCC-Rebuild/contact"
+            to="/contact"
           >
             <div>CONTACT</div>
           </Link>

@@ -7,8 +7,8 @@ import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter>
-    <ScrollToTop/>
+    <BrowserRouter basename="/MCC-Rebuild">
+      <ScrollToTop />
       <App />
     </BrowserRouter>
   </React.StrictMode>
