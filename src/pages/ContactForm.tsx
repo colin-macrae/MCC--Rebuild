@@ -40,61 +40,64 @@ export default function ContactForm(): JSX.Element {
   };
 
   return (
-    <div>
+    <div className="">
       <div className={sentClassName}>
         Thank you for contacting us. We will be in touch soon!
       </div>
       <form className={formClassName} onSubmit={handleSubmit(onSubmit)}>
         <label htmlFor="first" />
-        <div>
+        <div className="w-full mb-4">
           {" "}
           <input
+            className="w-full"
             id="first"
             placeholder="First Name*"
             {...register("first", { required: true })}
           />
-          {errors.first && (
-            <span className="required-field">This field is required</span>
-          )}
+          {errors.first && <span className="required-field">This field is required</span>}
+        </div>
+
+        <div className="w-full mb-4">
           <label htmlFor="last" />
           <input
+            className="w-full"
             id="last"
             placeholder="Last Name*"
             {...register("last", { required: true })}
           />
-          {errors.last && (
-            <span className="required-field">This field is required</span>
-          )}
+          {errors.last && <span className="required-field">This field is required</span>}
         </div>
 
         <label htmlFor="phone" />
-        <div>
+        <div className="w-full mb-4">
           {" "}
           <input
+            className="w-full"
             id="phone"
-            placeholder="Phone"
+            placeholder="Phone*"
             {...register("phone", { required: true })}
           />
+          {errors.phone && <span className="required-field">This field is required</span>}
         </div>
 
         <label htmlFor="email" />
-        <div>
+        <div className="w-full mb-4">
           {" "}
           <input
+            className="w-full"
             id="email"
             placeholder="Email*"
             type="email"
             {...register("email", { required: true })}
           />
-          {errors.email && (
-            <span className="required-field">This field is required</span>
-          )}
+          {errors.email && <span className="required-field">This field is required</span>}
         </div>
 
         <label htmlFor="message" />
-        <div>
+        <div className="w-full mb-4 ">
           {" "}
           <textarea
+            className="w-full min-h-[100px] border-slate-300 p-2"
             id="message"
             placeholder="Message*"
             {...register("message", { required: true })}
@@ -105,7 +108,13 @@ export default function ContactForm(): JSX.Element {
         </div>
 
         <div>
-          <input type="submit" className="submit-btn" value="SEND MESSAGE" />
+          <button
+            type="submit"
+            className="btn bg-[#F48700] text-white my-2 px-16"
+            value="SEND MESSAGE"
+          >
+            SEND MESSAGE
+          </button>
         </div>
       </form>
     </div>

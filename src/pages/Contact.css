@@ -3,15 +3,12 @@ textarea {
   width: 30%;
 }
 
-.submit-btn {
-  border: 1px black solid;
-}
-
 .submit-btn:hover {
   background-color: rgb(216, 216, 216);
 }
 
-input, select {
+input,
+select {
   border: 1px black solid;
 }
 
@@ -24,9 +21,33 @@ input, select {
 }
 
 .asterisk {
-  color:rgb(255, 92, 92)
+  color: rgb(255, 92, 92);
 }
 
 .email-sent {
   background-color: rgb(197, 236, 197);
+}
+
+.background-image-contact {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/contact-heading-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.contact-bg {
+  background-image: url("../assets/Carousel-Bg.jpg");
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
